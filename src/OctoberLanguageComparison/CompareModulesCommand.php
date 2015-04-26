@@ -11,11 +11,11 @@ class CompareModulesCommand extends Command
     {
         $this
             ->setName('compare:modules')
-            ->setDescription('Blabla')
+            ->setDescription('Compares everything in the modules directory. Must be executed from the project\'s root directory.')
             ->addArgument(
                 'devLang',
                 InputArgument::REQUIRED,
-                'Dev lang code. Eg: de or nb-no'
+                'Language code to compare. Eg: de or nb-no'
             );
     }
 

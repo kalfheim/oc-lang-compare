@@ -11,16 +11,16 @@ class CompareDirCommand extends Command
     {
         $this
             ->setName('compare:dir')
-            ->setDescription('Blabla')
+            ->setDescription('Compare a single lang directory.')
             ->addArgument(
                 'langDir',
                 InputArgument::REQUIRED,
-                'Base lang directory. Eg: modules/lang'
+                'Lang directory to check. Relative to current path. Eg: modules/lang'
             )
             ->addArgument(
                 'devLang',
                 InputArgument::REQUIRED,
-                'Dev lang code. Eg: de or nb-no'
+                'Language code to compare. Eg: de or nb-no'
             );
     }
 
