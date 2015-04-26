@@ -1,0 +1,28 @@
+{
+    "name": "krisawzm/oc-lang-compare",
+    "description": "A tool for checking if your translations in the October CMS are up-to-date.",
+    "keywords": ["october cms", "language", "translation"],
+    "license": "MIT",
+    "homepage": "https://github.com/krisawzm/oc-lang-compare",
+    "support": {
+        "issues": "https://github.com/krisawzm/oc-lang-compare/issues",
+        "source": "https://github.com/krisawzm/oc-lang-compare"
+    },
+    "authors": [
+        {
+            "name": "Kristoffer Alfheim",
+            "email": "kristoffer.alfh@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "symfony/console": "2.6.*",
+        "symfony/finder": "2.6.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "krisawzm\\OctoberLanguageComparison\\": "src/OctoberLanguageComparison/"
+        }
+    },
+    "minimum-stability": "dev"
+}
