@@ -107,8 +107,6 @@ class Compare
             $dataArray = require_once $groupFile;
             $prefix = basename($groupFile).' -> ';
 
-            //$keys += $this->getKeys($dataArray, basename($groupFile)." -> ");
-
             $iterator = new RecursiveIteratorIterator(new RecursiveArrayIterator($dataArray));
 
             foreach ($iterator as $key => $value) {
