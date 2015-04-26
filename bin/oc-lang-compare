@@ -1,0 +1,17 @@
+#!/usr/bin/env php
+<?php
+
+if (is_dir(__DIR__.'/../vendor/autoload.php')) {
+	require_once __DIR__.'/../vendor/autoload.php';
+}
+elseif (is_dir(__DIR__.'/../../../vendor/autoload.php')) {
+	require_once __DIR__.'/../../../vendor/autoload.php';
+}
+else {
+	die('Couldn\'t find the Composer autoloader.');
+}
+
+$app = new \Symfony\Component\Console\Application();
+$app->add(new \krisawzm\OctoberLanguageComparison\CompareDirCommand());
+$app->add(new \krisawzm\OctoberLanguageComparison\CompareModulesCommand());
+$app->run();

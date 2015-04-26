@@ -1,9 +1,0 @@
-#!/usr/bin/env php
-<?php
-
-require __DIR__.'/vendor/autoload.php';
-
-$app = new \Symfony\Component\Console\Application();
-$app->add(new \krisawzm\OctoberLanguageComparison\CompareDirCommand());
-$app->add(new \krisawzm\OctoberLanguageComparison\CompareModulesCommand());
-$app->run();

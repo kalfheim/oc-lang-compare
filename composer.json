@@ -24,5 +24,6 @@
             "krisawzm\\OctoberLanguageComparison\\": "src/OctoberLanguageComparison/"
         }
     },
+    "bin": ["bin/oc-lang-compare"],
     "minimum-stability": "dev"
 }
