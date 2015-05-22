@@ -13,7 +13,7 @@ use RecursiveIteratorIterator;
 class Compare
 {
     /**
-     * The 'master' lang to compare width.
+     * The 'master' lang to compare with.
      *
      * @var string
      */
